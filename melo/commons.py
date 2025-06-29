@@ -15,6 +15,7 @@ def get_padding(kernel_size, dilation=1):
 
 def convert_pad_shape(pad_shape):
     layer = pad_shape[::-1]
+    print("demo log")
     pad_shape = [item for sublist in layer for item in sublist]
     return pad_shape
 

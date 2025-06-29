@@ -32,6 +32,7 @@ class TextAudioSpeakerLoader(torch.utils.data.Dataset):
         self.spk_map = hparams.spk2id
         self.hparams = hparams
         self.disable_bert = getattr(hparams, "disable_bert", False)
+        print("demo log")
 
         self.use_mel_spec_posterior = getattr(
             hparams, "use_mel_posterior_encoder", False
